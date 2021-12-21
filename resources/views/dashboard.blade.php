@@ -50,16 +50,16 @@ hr {
 </head>
 <body>
   <table style="width:100px; border: 1px solid black">
-<form>
+<form action="dashboard">
   <div class="container">
   <center>  <h1> Registeration Form</h1> </center>
   <hr>
   <label> Firstname </label>
-<input type="text" name="firstname" placeholder= "Firstname" size="15" required />
+<input type="text" name="firstname" placeholder= "Firstname" size="15"  />
 <label> Middlename: </label>
-<input type="text" name="middlename" placeholder="Middlename" size="15" required />
+<input type="text" name="middlename" placeholder="Middlename" size="15"  />
 <label> Lastname: </label>
-<input type="text" name="lastname" placeholder="Lastname" size="15"required />
+<input type="text" name="lastname" placeholder="Lastname" size="15" />
 <div>
 <label>
 Course :
@@ -88,18 +88,18 @@ Gender :
 Phone :
 </label>
 <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>
-<input type="text" name="phone" placeholder="phone no." size="10"/ required>
+<input type="text" name="phone" placeholder="phone no." size="10"/ >
 Current Address :
-<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" >
 </textarea>
  <label for="email"><b>Email</b></label>
- <input type="text" placeholder="Enter Email" name="email" required>
+ <input type="text" placeholder="Enter Email" name="email" >
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" >
 
     <label for="psw-repeat"><b>Re-type Password</b></label>
-    <input type="password" placeholder="Retype Password" name="psw-repeat" required>
+    <input type="password" placeholder="Retype Password" name="psw-repeat" >
     <button type="submit" class="registerbtn">Register</button>
 </form>
 </table>
