@@ -50,7 +50,7 @@ hr {
 </head>
 <body>
   <table style="width:100px; border: 1px solid black">
-<form action="dashboard">
+<form action="dashboard"  method="post" enctype="multipart/form-data">
   <div class="container">
   <center>  <h1> Registeration Form</h1> </center>
   <hr>
