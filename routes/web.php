@@ -19,3 +19,6 @@ Route::get('add-student', [StudentController::class, 'create']);
 Route::post('add-student', [StudentController::class, 'store']);
 // fetching data
 Route::get('students', [StudentController::class, 'index']);
+//edit &update
+Route::get('edit-student/{id}', [StudentController::class, 'edit']);
+Route::put('update-student/{id}', [StudentController::class, 'update']);
