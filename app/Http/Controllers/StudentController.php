@@ -9,6 +9,7 @@ class StudentController extends Controller
 {
     public function create()
     {
+      // dd("DDDD");
         return view('student.create');
     }
 
@@ -22,5 +23,10 @@ class StudentController extends Controller
         $student->save();
         return redirect()->back()->with('status','Student Added Successfully');
     }
+  // fetching data
+    public function index()
+    {
+        $student = Student::all();
+        return view('student.index', compact('student'));
+    }
 }
-?>
