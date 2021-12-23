@@ -14,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('welcome');
 });
-//Route::post('dashboard',['uses'=>'dashboard-controller@dashboardfn']);
