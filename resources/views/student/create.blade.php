@@ -35,7 +35,7 @@
                             <button type="submit" class="btn btn-primary">Save Student</button>
                         </div>
                       <div class="form-group mb-3">
-                            <a href="" class="btn btn-primary btn-sm">Display data</a>
+                            <a href="{{ url('students') }}" class="btn btn-primary btn-sm">Display data</a>
                         </div>
 
                     </form>

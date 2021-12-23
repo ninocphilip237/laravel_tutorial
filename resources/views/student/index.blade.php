@@ -34,7 +34,7 @@
                                     <a href="{{ url('edit-student/'.$item->id) }}" class="btn btn-primary btn-sm">Edit</a>
                                 </td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                    <a href="{{ url('delete-student/'.$item->id) }}" class="btn btn-danger btn-sm">Delete</a>
                                 </td>
                             </tr>
                             @endforeach
