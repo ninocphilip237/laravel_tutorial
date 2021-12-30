@@ -6,12 +6,17 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+          @if (session('status'))
+              <h6 class="alert alert-success">{{ session('status') }}</h6>
+          @endif
             <div class="card">
                 <div class="card-header">
-                    <h4>How to Fetch data in Laravel 8</h4>
+
                 </div>
                 <div class="card-body">
-
+                  <form action="" method="POST">
+                      @csrf
+                      @method('DELETE')
                     <table class="table table-bordered table-striped">
                         <thead>
                             <tr>
@@ -42,6 +47,8 @@
                             @endforeach
                         </tbody>
                     </table>
+                  </form>
+
 
                 </div>
             </div>

@@ -12,9 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () {return view('welcome');});
 use App\Http\Controllers\StudentController;
 
 Route::get('add-student', [StudentController::class, 'create']);
@@ -25,7 +23,7 @@ Route::get('students', [StudentController::class, 'index']);
 Route::get('edit-student/{id}', [StudentController::class, 'edit']);
 Route::put('update-student/{id}', [StudentController::class, 'update']);
 // delete data
-Route::delete('delete-student/{id}', [StudentController::class, 'destroy']);
+Route::get('delete-student/{id}', [StudentController::class, 'destroy']);
 
 Auth::routes();
 
